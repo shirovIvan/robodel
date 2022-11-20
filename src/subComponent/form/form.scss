@@ -1,0 +1,54 @@
+@import "../../style/variables.scss";
+
+.form {
+  border-radius: 18px;
+  background-color: $grey;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 183px;
+  
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .step-back {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $primaryViolet;
+    }
+
+    &__adress {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        &__home {
+          display: flex;
+          gap: 11px;
+        }
+      }
+    }
+
+    &__contacts {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+    }
+  }
+}
